@@ -1,1 +1,7 @@
-e/
+# Default ignored files
+/shelf/
+/e/
+/workspace.xml
+# CodeStream ignored files
+/codestream.xml
+
