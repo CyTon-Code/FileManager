@@ -11,7 +11,7 @@ if __name__ == "__main__":  # If not imported, I exit is the module:
     exit()  # Answer: I'm leaving, I'm a module.
 
 
-def use_module(link: str) -> bool or Exception:  # Check if the file exists:
+def use_module(link: str) -> bool or Exception:  # I am trying to run a module:
     """
         This module is one of those who can connect other modules.
         This module treats each module as a person (by moving, not copying).
