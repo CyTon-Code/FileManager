@@ -3,8 +3,9 @@
     Via os.system or return (RUN) - doesn't work.
 """
 
-# TODO import  as Moves
-# TODO import  as Using
+# TODO import  as moves
+# TODO import  as using
+# TODO import  as check_module
 
 if __name__ == "__main__":  # If not imported, I exit is the module:
     print("I am is Module!!! Bye Bye!!!")
