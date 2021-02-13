@@ -9,7 +9,7 @@ def mode_manual():  # Manual command input mode:
     
     while no_exit:
         command = to_list(input(hi_sms))
-        if command[0] == "exit":
+        if command[0] == ".exit":
             no_exit = False
     pass
 
