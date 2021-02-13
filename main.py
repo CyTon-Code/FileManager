@@ -19,7 +19,7 @@ def mode_include(link: str):  # Executing commands from a file:
     pass
 
 
-def mode_arguments():
+def mode_arg():  # Executing commands using arguments at startup:
     pass
 
 
