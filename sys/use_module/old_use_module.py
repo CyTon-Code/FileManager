@@ -23,3 +23,4 @@ def main(link: str) -> bool or Exception:  # I am trying to run a module:
     # TODO Using the module at the receiving point, if there is a module there.
 
     # TODO Moves a module back home if it finds it where it was left.
+
