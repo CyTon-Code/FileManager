@@ -1,6 +1,7 @@
 # import  as to_list
+# import  as path
+
 hi_sms = "$ "
-# from ant import path
 
 
 def mode_manual():  # Manual command input mode:
