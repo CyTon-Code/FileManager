@@ -13,7 +13,7 @@ path_list_ants: {'lib.ant', '/ants/index.ant', '/sys/system.ant'};
 name: 'Queen';
 home: '~';
 
-title: '{name} {home}';
+title: '{name} {home}'; // <title>{name} {home}</title>
 hello: '[{title}]$ ';  // Это приветсвенное сообщение перед вводом
 //команды
 
