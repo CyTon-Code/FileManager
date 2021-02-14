@@ -1,45 +1,49 @@
-import mode
+# Я узнаю каким способом подключать модуль
 
+
+# import mode
+from fun import data_base_ant as bd
+from sys.ant_list.ant_list import ant_list
+from sys.ant_str.ant_str import ant_str as ant
+from fun import str_to_list as to_list
 # args:
 import sys
 
 if len(sys.argv) > 1:
-	mode.arg(sys.argv)
+    mode.arg(sys.argv)
 
 # ants:
-path = open_bd("path_list")
+path = bd.open_bd("path_list")
 
 if len(path) > 0 and type(path) == list:
-	for link in path:
-		mode.include(link)
+    for link in path:
+        mode.include(link)
 
 # console:
 no_exit = True
 
 while no_exit:
-	cmd = input()
-	ant(cmd)
+    cmd = input()
+    ant(cmd)
 
 
 def ant(cmd: str):
-	to_list(cmd)
-	ant_list(cmd)
-	pass
+    ant_list(to_list(cmd))
 
 
 def include(link: str):
-	with open(link, 'r') as f:
-		line = f.read().splitlines():
-	for cmd in line:
-		ant(cmd)
+    with open(link, 'r') as f:
+        line = f.read().splitlines()
+
+    for i in line:
+        ant(i)
+
 
 def arg(args):
-	i, n = 0, len(args)
-	
-	while i < n:
-		if args[i] == "-arg" and type(args[i+1]) == list:
-			ant_list(args[i + 1])
-		i += 1
+    tmp, *args = args
+    ant_list(args)
+
+
 pass
 
 # import  as to_list
@@ -55,22 +59,24 @@ hi_sms = "$ "
 def mode_manual():  # Manual command input mode:
     no_exit = True
     command = None
-    
+
     while no_exit:
         command = to_list(input(hi_sms))
         type_ant = ant_typ(command)
         if type_ant == "var":  # $?
-			if command[0] == "$?":
-				print(bash)
+            if command[0] == "$?":
+                print(bash)
         elif type_ant == "usr":  # .exit .help ...
-            system(command[0],command[1])
+            system(command[0], command[1])
         elif type_ant == "sys":
-			bash = sys_use_module()
-            pass  # import: home/sys   return bool or Exeption
+            bash = sys_use_module()
+        pass  # import: home/sys   return bool or Exeption
         else:  # module:
-			bash = use_module()
-            pass  # import: home/def
-    pass
+        bash = use_module()
+    pass  # import: home/def
+
+
+pass
 
 
 def mode_include(link: str):  # Executing commands from a file:
