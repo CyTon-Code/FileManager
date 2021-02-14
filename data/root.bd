@@ -1,1 +1,5 @@
 [copy_paste False][moving True]
+[args False][ants False][console True]
+[path_list_py {'', '/sys/', '/def/'}]
+[path_list_ants {'lib.ant', '/ants/index.ant', '/sys/system.ant'}]
+
