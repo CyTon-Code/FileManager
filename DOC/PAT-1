@@ -1,23 +1,23 @@
-PAT - Public ANT Template - Документация с примерами решения задач
-встроенными модулями. Правила написания хорошего встроенного модуля.
+PAT-1 - Public ANT Template - Documentation with examples of solving
+problems by built-in modules. Rules for writing a good inline module.
 
-Девиз: «Осмотрительность - наше все!»
+Motto: "Discretion is our everything!"
 
 """
-сделать: "Я сейчас начинаю решать задачу".
+what to do: "Now I'm starting to solve the problem."
 
-если "Я сейчас смог начать решать задачу":
-    сказать: "Я уже начал решать задачу"!
+if "I was able to start solving the problem now":
+    say: "I have already begun to solve the problem!"
 
-если "Я не смог начать решать задачу":
-    сказать: "Я сейчас не смог начать решать задачу"!
+if "I could not start solving the problem":
+    they say, "I just couldn't solve the problem!"
 
-после:
-    если "Я уже начал решать задачу":
-        сделать: "Я сейчас завершаю процесс: начала решения задачи".
+after:
+    if "I have already started solving the problem":
+        what to do: "I am finishing the cleaning process after myself."
 """
 
 
-Этот шаблон будет расширен для использования во встроенном модуле
-check_open.
+This template will be extended and will also be used in the check_open
+built-in module.
 
