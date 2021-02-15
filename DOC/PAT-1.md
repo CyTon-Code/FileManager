@@ -6,28 +6,28 @@ Motto: "Discretion is our everything!"
 """
 
 
-what to do: "Now I'm starting to solve the problem."
+    what to do: "Now I'm starting to solve the problem."
 
 
-if "I was able to start solving the problem now":
+    if "I was able to start solving the problem now":
 
 
-    say: "I have already begun to solve the problem!"
+        say: "I have already begun to solve the problem!"
 
 
-if "I could not start solving the problem":
+    if "I could not start solving the problem":
 
 
-    they say, "I just couldn't solve the problem!"
+        they say, "I just couldn't solve the problem!"
 
 
-after:
+    after:
 
 
-    if "I have already started solving the problem":
+        if "I have already started solving the problem":
 
 
-        what to do: "I am finishing the cleaning process after myself."
+            what to do: "I am finishing the cleaning process after myself."
 
 
 """
