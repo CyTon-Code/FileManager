@@ -14,8 +14,8 @@ Motto: "Discretion is our everything!"
     
     after:
         if "I have already started solving the problem":
-            todo "Remove trash."
             todo "last steps before exiting the process."
+            todo "Remove trash."
 
 This template will be extended and will also be used in the check_open
 built-in module.
