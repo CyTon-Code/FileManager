@@ -14,7 +14,7 @@ Motto: "Discretion is our everything!"
     
     after:
         if "I have already started solving the problem":
-            todo "I am finishing the cleaning process after myself."
+            todo "Cleaning is also part of the program."
 
 This template will be extended and will also be used in the check_open
 built-in module.
