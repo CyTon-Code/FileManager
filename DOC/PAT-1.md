@@ -1,5 +1,6 @@
 PAT-1 - Public ANT Template - Documentation with examples of solving
-problems by built-in modules. Rules for writing a good inline module.
+problems by built-in modules (more in APD-3). Rules for writing a
+good inline module.
 
 Motto: "Discretion is our everything!"
 
@@ -19,4 +20,3 @@ Motto: "Discretion is our everything!"
 
 This template will be extended and will also be used in the check_open
 built-in module.
-
