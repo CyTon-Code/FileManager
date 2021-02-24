@@ -1,6 +1,6 @@
-import arg_let
+import bd
 # Узнаем: Где можно подключать модули, а где нет?
-name_space_arg = arg_let()
+name_space_arg = bd.get("root arg_let")
 
 
 def module(args):
