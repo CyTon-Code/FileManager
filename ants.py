@@ -26,7 +26,7 @@ def main(args):
         command = to_list(input(hi_sms))
         type_ant = ant_typ(command)
 
-        if type_ant == "usr":  # .exit .help ...
+        if type_ant == "usr":
             system(command[0])
 
         elif type_ant == "sys":
