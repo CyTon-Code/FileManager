@@ -2,10 +2,15 @@
 # FileManager
 "The terminal as I see it!" this is an application for working with files.
 
-Разработка этого раздела приостановлена, так как приоретет сейчас на:
+Development of this section has been suspended due to the following priorities:
+- Built-in modules.
+- Additional modules.
 
-.Встроенные модули.
-.Дополнительные модули.
 
+After that, of course, I'll start developing the interface itself, built on modules - the terminal core.
 
-После разумеетсяя приступлю к разработки интерфейса взаисмодеййствий между модялми - ядро терминала
+I've already tried to write such an interface, but it was a bad idea.
+
+I plan to first adopt the rules - How to write modules correctly.
+
+This interface must conform to the module rules, not the other way around.
