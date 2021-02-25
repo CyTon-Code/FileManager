@@ -7,10 +7,10 @@ The development of this section has been suspended due to the following developm
 - Additional modules.
 
 
-After that, of course, I'll start developing the interface itself, built on modules - the terminal core.
+After reaching the release of most of the modules, of course, I will start developing the interface itself, built on modules - the terminal core (TerModule - FileManager).
 
-I've already tried to write such an interface, but it was a bad idea.
+I already tried to write such an interface, but it was a bad idea.
 
 I plan to first adopt the rules - How to write modules correctly.
 
-This interface must conform to the module rules, not the other way around.
+This interface must follow the rules of the module, not the other way around.
