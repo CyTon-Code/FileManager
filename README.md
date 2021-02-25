@@ -2,7 +2,7 @@
 # FileManager
 "The terminal as I see it!" this is an application for working with files.
 
-Development of this section has been suspended due to the following priorities:
+The development of this section has been suspended due to the following development priorities for these sections:
 - Built-in modules.
 - Additional modules.
 
