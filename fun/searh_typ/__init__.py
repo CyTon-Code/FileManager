@@ -10,7 +10,7 @@
     верну масив
 """
 
-from internal.correct_type import end_typ
+from internal.correct_type import correct_type
 
 
 def clear_typ(array, typ):  # Доп модуль.
@@ -23,7 +23,7 @@ def clear_typ(array, typ):  # Доп модуль.
         n = len(array)
 
         while i < n:
-            if not end_typ(array[i], typ):
+            if not correct_type(array[i], typ):
                 array.remove(array[i])  # del i
 
                 n = len(array)  # Update n
@@ -36,4 +36,4 @@ def clear_typ(array, typ):  # Доп модуль.
 
 el = ["1.txt", "i.del", "o.txt", "text.txt", "de"]
 print(clear_typ(el, ".txt"))
-print(end_typ("e.l", ".l"))
+print(correct_type("e.l", ".l"))
