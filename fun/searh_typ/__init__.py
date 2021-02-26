@@ -13,7 +13,7 @@
 from internal.correct_type import correct_type
 
 
-def clear_typ(array, typ):  # Доп модуль.
+def clear_typ(array: list, typ: str) -> list:  # Доп модуль.
     flag = True
 
     while flag:
