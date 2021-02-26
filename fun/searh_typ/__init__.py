@@ -10,22 +10,7 @@
     верну масив
 """
 
-def end_typ(link, typ):  # Нужного ли типа файл?  - встроенный модуль
-    n = len(typ)  # -n -это нулевой єлемен массива.
-
-    if n > len(link) or typ in ("", "."):
-        return None  # тип файла содержит больше букв, чем имя файла или
-        #указанный тип есть в чорном списке.
-
-    i = 1  # последний элемент масив это: n-1 или -1
-
-    while i <= n:  # Читаю строку типа и сравниваю с строкой.
-        if link[-i] != typ[-i]:  # Если нашел не схожие буквы в типе:
-            return False
-
-        i += 1
-
-    return True
+from internal.correct_type import end_typ
 
 
 def clear_typ(array, typ):  # Доп модуль.
@@ -39,7 +24,6 @@ def clear_typ(array, typ):  # Доп модуль.
 
         while i < n:
             if not end_typ(array[i], typ):
-
                 array.remove(array[i])  # del i
 
                 n = len(array)  # Update n
