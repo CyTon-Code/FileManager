@@ -14,10 +14,10 @@ from internal.correct_type import correct_type
 
 
 def clear_typ(array: list, typ: str) -> list:  # Доп модуль.
-    flag = True
+    flag = True  # Я менял внутри списка.
 
     while flag:
-        flag = False
+        flag = False  # Я не менял внутри списка.
 
         i = 0
         n = len(array)
@@ -27,13 +27,15 @@ def clear_typ(array: list, typ: str) -> list:  # Доп модуль.
                 array.remove(array[i])  # del i
 
                 n = len(array)  # Update n
-                flag = True  # Скажу что я менял
+                flag = True  # Я менял внутри списка.
 
             i += 1
 
     return array
 
 
+"""  test:
 el = ["1.txt", "i.del", "o.txt", "text.txt", "de"]
 print(clear_typ(el, ".txt"))
 print(correct_type("e.l", ".l"))
+"""
