@@ -10,7 +10,7 @@
     верну масив
 """
 
-from internal.correct_type import correct_type
+from internal.equal_type import equal_type
 
 
 def clear_typ(array: list, typ: str) -> list:  # Доп модуль.
@@ -23,7 +23,7 @@ def clear_typ(array: list, typ: str) -> list:  # Доп модуль.
         n = len(array)
 
         while i < n:
-            if not correct_type(array[i], typ):
+            if not equal_type(array[i], typ):
                 array.remove(array[i])  # del i
 
                 n = len(array)  # Update n
@@ -37,5 +37,5 @@ def clear_typ(array: list, typ: str) -> list:  # Доп модуль.
 """  test:
 el = ["1.txt", "i.del", "o.txt", "text.txt", "de"]
 print(clear_typ(el, ".txt"))
-print(correct_type("e.l", ".l"))
+print(equal_type("e.l", ".l"))
 """
