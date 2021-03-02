@@ -3,7 +3,8 @@
     Via os.system or Return (RUN) - doesn't work.
 """
 
-from sys.moves_module.main import moves
+from internal.check_open_file import check_open_file
+from internal.move_file import move_file
 
 # TODO import  as using
 # TODO import  as check_open
@@ -19,13 +20,13 @@ def use_module(link: str) -> bool or Exception:  # I am trying to run a module:
         This module treats each module as a person (by moving, not copying).
     """  # Credo: Connecting the selected module...
     path = ""
-    if check_open(path) and not check_open(link):
-        moves(link, path)
+    if check_open_file(path) and not check_open_file(link):
+        move_file(link, path)
     # TODO Moves the module to the receive point if the point is free.
 
     # TODO Using the module at the receiving point, if there is a module there.
 
-    moves(path, link)
+    move_file(path, link)
     # TODO Moves a module back home if it finds it where it was left.
 
     # TODO return result
