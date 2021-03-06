@@ -10,46 +10,32 @@
     верну масив
 """
 
-def end_typ(link, typ):  # Нужного ли типа файл?  - встроенный модуль
-    n = len(typ)  # -n -это нулевой єлемен массива.
-
-    if n > len(link) or typ in ("", "."):
-        return None  # тип файла содержит больше букв, чем имя файла или
-        #указанный тип есть в чорном списке.
-
-    i = 1  # последний элемент масив это: n-1 или -1
-
-    while i <= n:  # Читаю строку типа и сравниваю с строкой.
-        if link[-i] != typ[-i]:  # Если нашел не схожие буквы в типе:
-            return False
-
-        i += 1
-
-    return True
+from internal.equal_type import equal_type
 
 
-def clear_typ(array, typ):  # Доп модуль.
-    flag = True
+def clear_typ(array: list, typ: str) -> list:  # Доп модуль.
+    flag = True  # Я менял внутри списка.
 
     while flag:
-        flag = False
+        flag = False  # Я не менял внутри списка.
 
         i = 0
         n = len(array)
 
         while i < n:
-            if not end_typ(array[i], typ):
-
+            if not equal_type(array[i], typ):
                 array.remove(array[i])  # del i
 
                 n = len(array)  # Update n
-                flag = True  # Скажу что я менял
+                flag = True  # Я менял внутри списка.
 
             i += 1
 
     return array
 
 
+"""  test:
 el = ["1.txt", "i.del", "o.txt", "text.txt", "de"]
 print(clear_typ(el, ".txt"))
-print(end_typ("e.l", ".l"))
+print(equal_type("e.l", ".l"))
+"""
